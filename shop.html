@@ -43,8 +43,8 @@
             <div class="container topbar bg-primary d-none d-lg-block">
                 <div class="d-flex justify-content-between">
                     <div class="top-info ps-2">
-                        <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">123 Calle, Nueva York</a></small>
-                        <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">Correo@Ejemplo.com</a></small>
+                        <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">Calle El Deseo, Madrid 2018</a></small>
+                        <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">frutifrutilovers@gmail.com</a></small>
                     </div>
                     <div class="top-link pe-2">
                         <a href="#" class="text-white"><small class="text-white mx-2">Política de Privacidad</small>/</a>
@@ -63,13 +63,11 @@
                         <div class="navbar-nav mx-auto">
                             <a href="index.html" class="nav-item nav-link">Inicio</a>
                             <a href="shop.html" class="nav-item nav-link active">Tienda</a>
-                            <a href="shop-detail.html" class="nav-item nav-link">Detalle de Tienda</a>
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Páginas</a>
                                 <div class="dropdown-menu m-0 bg-secondary rounded-0">
                                     <a href="cart.html" class="dropdown-item">Carro</a>
                                     <a href="chackout.html" class="dropdown-item">Pago</a>
-                                    <a href="testimonial.html" class="dropdown-item">Reseñas</a>
                                   
                                 </div>
                             </div>
@@ -96,10 +94,7 @@
         <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Buscar por palabra clave</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                    </div>
+                   
                     <div class="modal-body d-flex align-items-center">
                         <div class="input-group w-75 mx-auto d-flex">
                             <input type="search" class="form-control p-3" placeholder="palabras clave" aria-describedby="search-icon-1">
@@ -130,166 +125,20 @@
                 <h1 class="mb-4">Tienda de frutas frescas</h1>
                 <div class="row g-4">
                     <div class="col-lg-12">
-                        <div class="row g-4">
-                            <div class="col-xl-3">
-                                <div class="input-group w-100 mx-auto d-flex">
-                                    <input type="search" class="form-control p-3" placeholder="palabras clave" aria-describedby="search-icon-1">
-                                    <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
-                                </div>
-                            </div>
-                            <div class="col-6"></div>
-                            <div class="col-xl-3">
-                                <div class="bg-light ps-3 py-3 rounded d-flex justify-content-between mb-4">
-                                    <label for="fruits">Ordenar por defecto:</label>
-                                    <select id="fruits" name="fruitlist" class="border-0 form-select-sm bg-light me-3" form="fruitform">
-                                        <option value="volvo">Nada</option>
-                                        <option value="saab">Popularidad</option>
-                                        <option value="opel">Orgánico</option>
-                                        <option value="audi">Fantástico</option>
-                                    </select>
-                                </div>
-                            </div>
+                        <div class="row g-4">   
                         </div>
                         <div class="row g-4">
                             <div class="col-lg-3">
                                 <div class="row g-4">
                                     <div class="col-lg-12">
-                                        <div class="mb-3">
-                                            <h4>Categorías</h4>
-                                            <ul class="list-unstyled fruite-categorie">
-                                                <li>
-                                                    <div class="d-flex justify-content-between fruite-name">
-                                                        <a href="shop-detail.html"><i class="fas fa-apple-alt me-2"></i>Manzanas</a>
-                                                        <span>(3)</span>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="d-flex justify-content-between fruite-name">
-                                                        <a href="shop-detail.html"><i class="fas fa-apple-alt me-2"></i>Naranjas</a>
-                                                        <span>(5)</span>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="d-flex justify-content-between fruite-name">
-                                                        <a href="shop-detail.html"><i class="fas fa-apple-alt me-2"></i>Fresas</a>
-                                                        <span>(2)</span>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="d-flex justify-content-between fruite-name">
-                                                        <a href="shop-detail.html"><i class="fas fa-apple-alt me-2"></i>Plátanos</a>
-                                                        <span>(8)</span>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="d-flex justify-content-between fruite-name">
-                                                        <a href="shop-detail.html"><i class="fas fa-apple-alt me-2"></i>Calabazas</a>
-                                                        <span>(5)</span>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
                                     </div>
-                                    <div class="col-lg-12">
-                                        <div class="mb-3">
-                                            <h4 class="mb-2">Precio</h4>
-                                            <input type="range" class="form-range w-100" id="rangeInput" name="rangeInput" min="0" max="500" value="0" oninput="amount.value=rangeInput.value">
-                                            <output id="amount" name="amount" min-velue="0" max-value="500" for="rangeInput">0</output>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="mb-3">
-                                            <h4>Adicional</h4>
-                                            <div class="mb-2">
-                                                <input type="radio" class="me-2" id="Categories-1" name="Categories-1" value="Beverages">
-                                                <label for="Categories-1"> Orgánico</label>
-                                            </div>
-                                            <div class="mb-2">
-                                                <input type="radio" class="me-2" id="Categories-2" name="Categories-1" value="Beverages">
-                                                <label for="Categories-2"> Fresco</label>
-                                            </div>
-                                            <div class="mb-2">
-                                                <input type="radio" class="me-2" id="Categories-3" name="Categories-1" value="Beverages">
-                                                <label for="Categories-3"> Ventas</label>
-                                            </div>
-                                            <div class="mb-2">
-                                                <input type="radio" class="me-2" id="Categories-4" name="Categories-1" value="Beverages">
-                                                <label for="Categories-4"> Descuento</label>
-                                            </div>
-                                            <div class="mb-2">
-                                                <input type="radio" class="me-2" id="Categories-5" name="Categories-1" value="Beverages">
-                                                <label for="Categories-5"> Caducado</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <h4 class="mb-3">Productos destacados</h4>
-                                        <div class="d-flex align-items-center justify-content-start">
-                                            <div class="rounded me-4" style="width: 100px; height: 100px;">
-                                                <a href="shop-detail.html"><img src="img/featur-1.jpg" class="img-fluid rounded" alt=""></a>
-                                            </div>
-                                            <div>
-                                                <h6 class="mb-2"><a href="shop-detail.html" class="text-dark">Plátano Grande</a></h6>
-                                                <div class="d-flex mb-2">
-                                                    <i class="fa fa-star text-secondary"></i>
-                                                    <i class="fa fa-star text-secondary"></i>
-                                                    <i class="fa fa-star text-secondary"></i>
-                                                    <i class="fa fa-star text-secondary"></i>
-                                                    <i class="fa fa-star"></i>
-                                                </div>
-                                                <div class="d-flex mb-2">
-                                                    <h5 class="fw-bold me-2">2.99 $</h5>
-                                                    <h5 class="text-danger text-decoration-line-through">4.11 $</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-center justify-content-start">
-                                            <div class="rounded me-4" style="width: 100px; height: 100px;">
-                                                <a href="shop-detail.html"><img src="img/featur-2.jpg" class="img-fluid rounded" alt=""></a>
-                                            </div>
-                                            <div>
-                                                <h6 class="mb-2"><a href="shop-detail.html" class="text-dark">Plátano Grande</a></h6>
-                                                <div class="d-flex mb-2">
-                                                    <i class="fa fa-star text-secondary"></i>
-                                                    <i class="fa fa-star text-secondary"></i>
-                                                    <i class="fa fa-star text-secondary"></i>
-                                                    <i class="fa fa-star text-secondary"></i>
-                                                    <i class="fa fa-star"></i>
-                                                </div>
-                                                <div class="d-flex mb-2">
-                                                    <h5 class="fw-bold me-2">2.99 $</h5>
-                                                    <h5 class="text-danger text-decoration-line-through">4.11 $</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-center justify-content-start">
-                                            <div class="rounded me-4" style="width: 100px; height: 100px;">
-                                                <a href="shop-detail.html"><img src="img/featur-3.jpg" class="img-fluid rounded" alt=""></a>
-                                            </div>
-                                            <div>
-                                                <h6 class="mb-2"><a href="shop-detail.html" class="text-dark">Plátano Grande</a></h6>
-                                                <div class="d-flex mb-2">
-                                                    <i class="fa fa-star text-secondary"></i>
-                                                    <i class="fa fa-star text-secondary"></i>
-                                                    <i class="fa fa-star text-secondary"></i>
-                                                    <i class="fa fa-star text-secondary"></i>
-                                                    <i class="fa fa-star"></i>
-                                                </div>
-                                                <div class="d-flex mb-2">
-                                                    <h5 class="fw-bold me-2">2.99 $</h5>
-                                                    <h5 class="text-danger text-decoration-line-through">4.11 $</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex justify-content-center my-4">
-                                            <a href="shop.html" class="btn border border-secondary px-4 py-3 rounded-pill text-primary w-100">Ver Más</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="position-relative">
-                                            <img src="img/banner-fruits.jpg" class="img-fluid w-100 rounded" alt="">
+                                            <img src="https://blog.aepla.es/wp-content/uploads/2023/01/beneficios-saludables-frutas-verduras.jpeg" class="img-fluid w-100 rounded" alt="">
                                             <div class="position-absolute" style="top: 50%; right: 10px; transform: translateY(-50%);">
-                                                <h3 class="text-secondary fw-bold">Frescas <br> Frutas <br> Banner</h3>
+                                                <h3 class="text-secondary fw-bold">Frescas <br> Frutas <br> Verdura</h3>
                                             </div>
                                         </div>
                                     </div>
@@ -305,7 +154,6 @@
                                             <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Frutas</div>
                                             <div class="p-4 border border-secondary border-top-0 rounded-bottom">
                                                 <h4><a href="shop-detail.html" class="text-dark">Uvas</a></h4>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                                                 <div class="d-flex justify-content-between flex-lg-wrap">
                                                     <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
                                                     <a href="cart.html" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Añadir al carro</a>
@@ -316,12 +164,11 @@
                                     <div class="col-md-6 col-lg-6 col-xl-4">
                                         <div class="rounded position-relative fruite-item">
                                             <div class="fruite-img">
-                                                <a href="shop-detail.html"><img src="img/fruite-item-5.jpg" class="img-fluid w-100 rounded-top" alt=""></a>
+                                                <a href="shop-detail.html"><img src="img/best-product-6.jpg" class="img-fluid w-100 rounded-top" alt=""></a>
                                             </div>
                                             <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Frutas</div>
                                             <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                <h4><a href="shop-detail.html" class="text-dark">Uvas</a></h4>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                                <h4><a href="shop-detail.html" class="text-dark">Manzana</a></h4>
                                                 <div class="d-flex justify-content-between flex-lg-wrap">
                                                     <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
                                                     <a href="cart.html" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Añadir al carro</a>
@@ -337,7 +184,6 @@
                                             <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Frutas</div>
                                             <div class="p-4 border border-secondary border-top-0 rounded-bottom">
                                                 <h4><a href="shop-detail.html" class="text-dark">Frambuesas</a></h4>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                                                 <div class="d-flex justify-content-between flex-lg-wrap">
                                                     <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
                                                     <a href="cart.html" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Añadir al carro</a>
@@ -353,7 +199,6 @@
                                             <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Frutas</div>
                                             <div class="p-4 border border-secondary border-top-0 rounded-bottom">
                                                 <h4><a href="shop-detail.html" class="text-dark">Albaricoques</a></h4>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                                                 <div class="d-flex justify-content-between flex-lg-wrap">
                                                     <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
                                                     <a href="cart.html" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Añadir al carro</a>
@@ -361,6 +206,7 @@
                                             </div>
                                         </div>
                                     </div>
+                                    
                                     <div class="col-md-6 col-lg-6 col-xl-4">
                                         <div class="rounded position-relative fruite-item">
                                             <div class="fruite-img">
@@ -369,7 +215,6 @@
                                             <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Frutas</div>
                                             <div class="p-4 border border-secondary border-top-0 rounded-bottom">
                                                 <h4><a href="shop-detail.html" class="text-dark">Plátano</a></h4>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                                                 <div class="d-flex justify-content-between flex-lg-wrap">
                                                     <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
                                                     <a href="cart.html" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Añadir al carro</a>
@@ -385,7 +230,6 @@
                                             <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Frutas</div>
                                             <div class="p-4 border border-secondary border-top-0 rounded-bottom">
                                                 <h4><a href="shop-detail.html" class="text-dark">Naranjas</a></h4>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                                                 <div class="d-flex justify-content-between flex-lg-wrap">
                                                     <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
                                                     <a href="cart.html" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Añadir al carro</a>
@@ -396,14 +240,13 @@
                                     <div class="col-md-6 col-lg-6 col-xl-4">
                                         <div class="rounded position-relative fruite-item">
                                             <div class="fruite-img">
-                                                <a href="shop-detail.html"><img src="img/fruite-item-2.jpg" class="img-fluid w-100 rounded-top" alt=""></a>
+                                                <a href="shop-detail.html"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCSybxYcohpRgRdv6TiWqHcx-Q9YcddlIwKCW2Cy9bQuSBiRW5kKJlKBsu4z_ld0iZaNBv6de_Eui912o3KcVWwM2Ywe28qqyYNeWJNCQgbvTRhm0Kvkn5WCaKgR86k_Ss8V43_hXhz_A/s200/Pepino.jpg" class="img-fluid w-100 rounded-top" alt=""></a>
                                             </div>
-                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Frutas</div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Verdura</div>
                                             <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                <h4><a href="shop-detail.html" class="text-dark">Frambuesas</a></h4>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                                <h4><a href="shop-detail.html" class="text-dark">Pepino</a></h4>
                                                 <div class="d-flex justify-content-between flex-lg-wrap">
-                                                    <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
                                                     <a href="cart.html" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Añadir al carro</a>
                                                 </div>
                                             </div>
@@ -412,14 +255,13 @@
                                     <div class="col-md-6 col-lg-6 col-xl-4">
                                         <div class="rounded position-relative fruite-item">
                                             <div class="fruite-img">
-                                                <a href="shop-detail.html"><img src="img/fruite-item-5.jpg" class="img-fluid w-100 rounded-top" alt=""></a>
+                                                <a href="shop-detail.html"><img src="img/vegetable-item-5.jpg" class="img-fluid w-100 rounded-top" alt=""></a>
                                             </div>
-                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Frutas</div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Verduras</div>
                                             <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                <h4><a href="shop-detail.html" class="text-dark">Uvas</a></h4>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                                <h4><a href="shop-detail.html" class="text-dark">Patatas</a></h4>
                                                 <div class="d-flex justify-content-between flex-lg-wrap">
-                                                    <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
                                                     <a href="cart.html" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Añadir al carro</a>
                                                 </div>
                                             </div>
@@ -428,12 +270,56 @@
                                     <div class="col-md-6 col-lg-6 col-xl-4">
                                         <div class="rounded position-relative fruite-item">
                                             <div class="fruite-img">
-                                                <a href="shop-detail.html"><img src="img/fruite-item-1.jpg" class="img-fluid w-100 rounded-top" alt=""></a>
+                                                <a href="shop-detail.html"><img src="img/vegetable-item-6.jpg" class="img-fluid w-100 rounded-top" alt=""></a>
                                             </div>
-                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Frutas</div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Verduras</div>
                                             <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                <h4><a href="shop-detail.html" class="text-dark">Naranjas</a></h4>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                                <h4><a href="shop-detail.html" class="text-dark">Perejil</a></h4>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
+                                                    <a href="cart.html" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Añadir al carro</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 col-xl-4">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <a href="shop-detail.html"><img src="img/vegetable-item-4.jpg" class="img-fluid w-100 rounded-top" alt=""></a>
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Verduras</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4><a href="shop-detail.html" class="text-dark">Pimiento</a></h4>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
+                                                    <a href="cart.html" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Añadir al carro</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 col-xl-4">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <a href="shop-detail.html"><img src="https://s1.elespanol.com/2024/04/08/actualidad/846175531_241324413_1706x960.jpg" class="img-fluid w-100 rounded-top" alt=""></a>
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Verduras</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4><a href="shop-detail.html" class="text-dark">Zanahoria</a></h4>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
+                                                    <a href="cart.html" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Añadir al carro</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 col-xl-4">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <a href="shop-detail.html"><img src="img/vegetable-item-2.jpg" class="img-fluid w-100 rounded-top" alt=""></a>
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Verduras</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4><a href="shop-detail.html" class="text-dark">Brocoli</a></h4>
                                                 <div class="d-flex justify-content-between flex-lg-wrap">
                                                     <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
                                                     <a href="cart.html" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Añadir al carro</a>
@@ -441,18 +327,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12">
-                                        <div class="pagination d-flex justify-content-center mt-5">
-                                            <a href="#" class="rounded">&laquo;</a>
-                                            <a href="#" class="active rounded">1</a>
-                                            <a href="#" class="rounded">2</a>
-                                            <a href="#" class="rounded">3</a>
-                                            <a href="#" class="rounded">4</a>
-                                            <a href="#" class="rounded">5</a>
-                                            <a href="#" class="rounded">6</a>
-                                            <a href="#" class="rounded">&raquo;</a>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -470,23 +345,9 @@
                     <div class="row g-4">
                         <div class="col-lg-3">
                             <a href="#">
-                                <h1 class="text-primary mb-0">Fruitables</h1>
+                                <h1 class="text-primary mb-0">FrutifrutiLovers</h1>
                                 <p class="text-secondary mb-0">Productos frescos</p>
                             </a>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="position-relative mx-auto">
-                                <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Tu Correo">
-                                <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Suscríbete Ahora</button>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="d-flex justify-content-end pt-3">
-                                <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube"></i></a>
-                                <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -494,9 +355,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-item">
                             <h4 class="text-light mb-3">¡Por qué la gente nos elige!</h4>
-                            <p class="mb-4">typesetting, remaining essentially unchanged. It was 
-                                popularised in the 1960s with the like Aldus PageMaker including of Lorem Ipsum.</p>
-                            <a href="" class="btn border-secondary py-2 px-4 rounded-pill text-primary">Leer Más</a>
+                            <p class="mb-4">Nuestros productos orgánicos son los mejores que podrás encontrar, con la mejor de las calidades y el mejor precio.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -514,11 +373,7 @@
                         <div class="d-flex flex-column text-start footer-item">
                             <h4 class="text-light mb-3">Cuenta</h4>
                             <a class="btn-link" href="">Mi Cuenta</a>
-                            <a class="btn-link" href="">Detalles de la Tienda</a>
                             <a class="btn-link" href="">Carro de Compras</a>
-                            <a class="btn-link" href="">Lista de Deseos</a>
-                            <a class="btn-link" href="">Historial de Pedidos</a>
-                            <a class="btn-link" href="">Pedidos Internacionales</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -541,7 +396,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Tu Nombre de Sitio</a>, Todos los derechos reservados.</span>
+                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>FrutifrutiLovers</a>, Todos los derechos reservados.</span>
                     </div>
                     <div class="col-md-6 my-auto text-center text-md-end text-white">
                         <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
