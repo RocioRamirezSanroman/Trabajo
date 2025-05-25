@@ -12,7 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class frutiController {
-   
+	
 	 @GetMapping("/index")
 	 public String irIndex() {
 		 return "index"; 
