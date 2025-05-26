@@ -96,8 +96,9 @@
 		<div class="container-fluid py-5">
 		    <div class="container py-5">
 		        <h1 class="mb-4">Detalles de facturación</h1>
-		        <form id="formularioPedido" action="#"> <!-- Añade un ID al formulario -->
+		        <form id="formularioPedido" action="#">
 		            <div class="row g-5">
+		                <!-- Primera columna (izquierda) -->
 		                <div class="col-md-12 col-lg-6 col-xl-7">
 		                    <div class="row">
 		                        <div class="col-md-12 col-lg-6">
@@ -137,97 +138,92 @@
 		                    <div class="form-item">
 		                        <textarea name="notas" class="form-control" spellcheck="false" cols="30" rows="11" placeholder="Notas del pedido (Opcional)"></textarea>
 		                    </div>
-		                </div>
-		            </div>
-                        <div class="col-md-12 col-lg-6 col-xl-5">
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                    <tbody>
-     
-										<table class="table">
-										    <tr>
-										        <th scope="row"></th>
-										        <td class="py-5"></td>
-										        <td class="py-5"></td>
-										        <td class="py-5">
-										    </tr>
-										    <tr>
-										        <th scope="row"></th>
-										        <td class="py-5">
-										            <p class="mb-0 text-dark py-4">Envío</p>
-										        </td>
-										        <td colspan="3" class="py-5">
-										            <div class="form-check text-start">
-										                <input type="checkbox" class="form-check-input bg-primary border-0" id="Shipping-1" name="Shipping-1">
-										                <label class="form-check-label" for="Shipping-1">Envío Gratis</label>
-										            </div>
-										        </td>
-										    </tr>
-										    <tr>
-										        <th scope="row"></th>
-										        <td class="py-5">
-										            <p class="mb-0 text-dark text-uppercase py-3">TOTAL</p>
-										        </td>
-										        <td class="py-5"></td>
-										        <td class="py-5"></td>
-										        <td class="py-5">
-										            <div class="py-3 border-bottom border-top">
-										                <p class="mb-0 text-dark">0,00 €</p> <!-- Aquí se actualizará el total -->
-										            </div>
-										        </td>
-										    </tr>
-										</table>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-							<div class="row g-4 text-center align-items-center justify-content-center border-bottom py-3">
-							    <div class="col-12">
-							        <div class="form-check text-start my-3">
-							            <input type="radio" class="form-check-input bg-primary border-0" id="Transfer-1" name="PaymentMethod" value="Transfer">
-							            <label class="form-check-label" for="Transfer-1">Transferencia Bancaria Directa</label>
-							        </div>
-							        <p class="text-start text-dark">Realice su pago directamente en nuestra cuenta bancaria.</p>
-							    </div>
-							</div>
+		                </div> <!-- Cierra la primera columna -->
 
-							<div class="row g-4 text-center align-items-center justify-content-center border-bottom py-3">
-							    <div class="col-12">
-							        <div class="form-check text-start my-3">
-							            <input type="radio" class="form-check-input bg-primary border-0" id="Payments-1" name="PaymentMethod" value="Cheque">
-							            <label class="form-check-label" for="Payments-1">Pagos con Cheque</label>
-							        </div>
-							   </div>
-							</div>
-							<div class="row g-4 text-center align-items-center justify-content-center border-bottom py-3">
-									<div class="col-12">
-										<div class="form-check text-start my-3">
-										<input type="radio" class="form-check-input bg-primary border-0" id="Payments-1" name="PaymentMethod" value="Cheque">
-										<label class="form-check-label" for="Payments-1">Pago Contra Entrega</label>
-									</div>
-								</div>
-							</div>
-							<div class="row g-4 text-center align-items-center justify-content-center border-bottom py-3">
-									<div class="col-12">
-										<div class="form-check text-start my-3">
-										<input type="radio" class="form-check-input bg-primary border-0" id="Payments-1" name="PaymentMethod" value="Cheque">
-										<label class="form-check-label" for="Payments-1">Paypal</label>
-									</div>
-								</div>
-							</div>
-
-							<div class="row g-4 text-center align-items-center justify-content-center pt-4">
-							    <button type="button" class="btn border-secondary py-3 px-4 text-uppercase w-100 text-primary" onclick="validarFormulario()">Realizar Pedido</button>
-							</div>
-
-							<div id="mensajeError" class="alert alert-danger mt-3 d-none"></div>
-
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
+		                <!-- Segunda columna (derecha) -->
+		                <div class="col-md-12 col-lg-6 col-xl-5">
+		                    <div class="table-responsive">
+		                        <table class="table">
+		                            <thead>
+		                            <tbody>
+		                                <table class="table">
+		                                    <tr>
+		                                        <th scope="row"></th>
+		                                        <td class="py-5"></td>
+		                                        <td class="py-5"></td>
+		                                        <td class="py-5">
+		                                    </tr>
+		                                    <tr>
+		                                        <th scope="row"></th>
+		                                        <td class="py-5">
+		                                            <p class="mb-0 text-dark py-4">Envío</p>
+		                                        </td>
+		                                        <td colspan="3" class="py-5">
+		                                            <div class="form-check text-start">
+		                                                <input type="checkbox" class="form-check-input bg-primary border-0" id="Shipping-1" name="Shipping-1">
+		                                                <label class="form-check-label" for="Shipping-1">Envío Gratis</label>
+		                                            </div>
+		                                        </td>
+		                                    </tr>
+		                                    <tr>
+		                                        <th scope="row"></th>
+		                                        <td class="py-5">
+		                                            <p class="mb-0 text-dark text-uppercase py-3">TOTAL</p>
+		                                        </td>
+		                                        <td class="py-5"></td>
+		                                        <td class="py-5"></td>
+		                                        <td class="py-5">
+		                                            <div class="py-3 border-bottom border-top">
+		                                                <p class="mb-0 text-dark">0,00 €</p>
+		                                            </div>
+		                                        </td>
+		                                    </tr>
+		                                </table>
+		                            </tbody>
+		                        </table>
+		                    </div>
+		                    <div class="row g-4 text-center align-items-center justify-content-center border-bottom py-3">
+		                        <div class="col-12">
+		                            <div class="form-check text-start my-3">
+		                                <input type="radio" class="form-check-input bg-primary border-0" id="Transfer-1" name="PaymentMethod" value="Transfer">
+		                                <label class="form-check-label" for="Transfer-1">Transferencia Bancaria Directa</label>
+		                            </div>
+		                            <p class="text-start text-dark">Realice su pago directamente en nuestra cuenta bancaria.</p>
+		                        </div>
+		                    </div>
+		                    <div class="row g-4 text-center align-items-center justify-content-center border-bottom py-3">
+		                        <div class="col-12">
+		                            <div class="form-check text-start my-3">
+		                                <input type="radio" class="form-check-input bg-primary border-0" id="Payments-1" name="PaymentMethod" value="Cheque">
+		                                <label class="form-check-label" for="Payments-1">Pagos con Cheque</label>
+		                            </div>
+		                        </div>
+		                    </div>
+		                    <div class="row g-4 text-center align-items-center justify-content-center border-bottom py-3">
+		                        <div class="col-12">
+		                            <div class="form-check text-start my-3">
+		                                <input type="radio" class="form-check-input bg-primary border-0" id="Payments-1" name="PaymentMethod" value="Cheque">
+		                                <label class="form-check-label" for="Payments-1">Pago Contra Entrega</label>
+		                            </div>
+		                        </div>
+		                    </div>
+		                    <div class="row g-4 text-center align-items-center justify-content-center border-bottom py-3">
+		                        <div class="col-12">
+		                            <div class="form-check text-start my-3">
+		                                <input type="radio" class="form-check-input bg-primary border-0" id="Payments-1" name="PaymentMethod" value="Cheque">
+		                                <label class="form-check-label" for="Payments-1">Paypal</label>
+		                            </div>
+		                        </div>
+		                    </div>
+		                    <div class="row g-4 text-center align-items-center justify-content-center pt-4">
+		                        <button type="button" class="btn border-secondary py-3 px-4 text-uppercase w-100 text-primary" onclick="validarFormulario()">Realizar Pedido</button>
+		                    </div>
+		                    <div id="mensajeError" class="alert alert-danger mt-3 d-none"></div>
+		                </div> <!-- Cierra la segunda columna -->
+		            </div> <!-- Cierra el row principal -->
+		        </form>
+		    </div>
+		</div>
         <!-- Checkout Page End -->
 
 
