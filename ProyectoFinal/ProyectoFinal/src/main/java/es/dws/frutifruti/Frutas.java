@@ -29,6 +29,4 @@ public class Frutas {
         this.cantidad = cantidad;
     }
 
-    @OneToMany(mappedBy="frutas")
-    private List<Carrito> carrito;
 }
