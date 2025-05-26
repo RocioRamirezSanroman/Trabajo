@@ -35,6 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if (totalElement) {
             totalElement.textContent = total.toFixed(2).replace('.', ',') + ' €';
         }
+		
+		localStorage.setItem('cartTotal', total.toFixed(2));
     }
     
     // Configurar event listeners para todos los inputs de cantidad
