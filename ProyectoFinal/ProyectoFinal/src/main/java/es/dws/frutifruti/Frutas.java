@@ -30,13 +30,4 @@ public class Frutas {
         this.precio = precio;
         this.cantidad = cantidad;
     }
-
-    List<Frutas> frutas = Arrays.asList(
-        new Frutas("Platanos", 2.99, 20),
-        new Frutas("Manzanas", 4.99, 20),
-        new Frutas("Frambuesas", 4.99, 20),
-        new Frutas("Albaricoques", 5.99, 20),
-        new Frutas("Uvas", 9.99, 20),
-        new Frutas("Naranjas", 3.99, 20)
-    );
 }

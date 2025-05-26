@@ -32,12 +32,4 @@ public class Verduras {
         this.cantidad = cantidad;
     }
 
-    List<Verduras> verduras = Arrays.asList(
-        new Verduras("Pepinos", 7.99, 20),
-        new Verduras("Patatas", 4.99, 20),
-        new Verduras("Pimientos", 6.99, 20),
-        new Verduras("Perejil", 1.99, 20),
-        new Verduras("Zanahorias", 5.99, 20),
-        new Verduras("Brocoli", 4.99, 20)
-    );
 }
